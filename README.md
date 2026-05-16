@@ -105,3 +105,13 @@ AI에게 땡^4큐^2_2라고 감정을 표현해보세요.
 상업적 이용 및 시스템 탑재 금지: 본 규칙을 기반으로 소프트웨어를 개발하거나, 기업용 플랫폼 및 서비스에 무단 탑재하는 등 일체의 영리적 목적 활용은 법적으로 엄격히 금지됩니다. 상업적 이용은 반드시 저작권자와의 별도 라이선스 계약을 거쳐야 합니다.
 
 비즈니스 제휴 및 관련 문의는 깃허브 Issue를 통해 남겨주시기 바랍니다.
+
+### 📄 Notice & Rights
+
+The notation rules of 'Sori-gyeol' are a structured combination of existing musical symbols (`//`, `'`) and keyboard special characters (`^`, `_`, `!`), reinterpreted for everyday text environments. This is a personal creation originally proposed, conceptualized, and systematically organized based on the ideas of the author (seunghun123).
+
+* **Full Freedom for Non-Commercial Personal Use:** Individual users are completely free to use this notation system in daily communication, messenger chats, games, etc., without any restrictions, and no attribution (credit) is required.
+* **Prohibition of Modifying and Redistributing the Official Specification:** Individual users are entirely free to slightly modify or adapt the symbols in their daily use. However, it is strictly prohibited to arbitrarily modify or alter the official specification document (README) of this project to redistribute it to third parties as a "new standard" or to register it as a derivative work.
+* **Prohibition of Commercial Use and System Integration:** Any use for commercial purposes, including developing software based on these rules or unauthorized integration into corporate platforms and services, is strictly prohibited by law. Commercial use must undergo a separate license agreement with the copyright holder.
+
+For business partnerships and related inquiries, please leave a message via GitHub Issues.
