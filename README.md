@@ -8,13 +8,14 @@
 
 ---
 
-## 🎨 1. 핵심 기호 5가지 (Core Keys)
+## 🎨 1. 핵심 기호 6가지 (Core Keys)
 
-소리결은 5가지 직관적인 기호와 숫자의 조합으로 이루어집니다.
+소리결은 6가지 직관적인 기호와 숫자의 조합으로 이루어집니다.
 
 * `^` : **음의 높낮이** (Pitch) ➔ 위로 솟는 화살표 느낌
 * `_` : **음의 길이** (Duration) ➔ 밑으로 질질 끄는 바(Bar) 느낌
 * `!` : **음의 강세** (Stress) ➔ 강렬하게 내리꽂는 느낌
+* `@` : **음의 떨림** (Vibrato) ➔ 빙글빙글 파동이 치는 느낌 (바이브레이션, 울먹임)
 * `//` : **급격한 정적** (Caesura) ➔ 칼로 자르듯 순간적으로 말문이 턱 막히는 정적
 * `'` : **자연스러운 호흡** (Breath Mark) ➔ 다음 말을 하기 위해 잠깐 숨을 고르는 틈
 
@@ -31,17 +32,22 @@
 * `야^1~3` : '야'라는 음절 하나 안에서 음이 점점 높아짐
 * `호_3!1~3` : '호'라는 긴 소리 안에서 강세가 점점 강해짐 (점점 크게)
 
- **"고마워"라는 한 단어의 다양한 결**
- * `고마^3워^2_2` ➔ 밝고 경쾌하게 대답하는 느낌
- * `고_2마_2워_5` ➔ 감정 없이 영혼 탈곡된 무미건조한 느낌
- * `고마워^1~3_2!1~3` ➔ 멀리서 진심을 다해 소리치는 느낌 ("고마워어어!!")
+**"고마워"라는 한 단어의 다양한 결**
+* `고마^3워^2_2` ➔ 밝고 경쾌하게 대답하는 느낌
+* `고_2마_2워_5` ➔ 감정 없이 영혼 탈곡된 무미건조한 느낌
+* `고마워^1~3_2!1~3` ➔ 멀리서 진심을 다해 소리치는 느낌 ("고마워어어!!")
 
+### ② 떨림(`@`)의 활용 (감정 연기 극대화)
+성대의 미세한 떨림을 표현하여 AI의 감정 연기를 극대화합니다.
+* `나 진짜 너무 추워@3_2` ➔ "추워어어" 하며 턱이 덜덜 떨리는 느낌.
+* `흑!2흑!2 나 어떡해@5` ➔ 두려움이나 슬픔에 북받쳐 목소리가 심하게 떨리는 연기.
+* `안^3@2돼_2` ➔ 고음(`^3`)으로 소리를 지르는데, 그 상태에서 목소리가 심하게 떨림(`@2`).
 
-### ② 호흡 및 정적의 표현 (쉼표 기능)
+### ③ 호흡 및 정적의 표현 (쉼표 기능)
 * `절대^4//2하지마^4` : "절대!" 외침 후 뚝 끊기는 정적(2만큼)이 발생한 뒤 "하지마!"로 이어짐 (극적인 긴장감)
 * `안녕하세요^3'2반갑습니다^3` : "안녕하세요" 마침 후 흐름을 깨지 않고 숨을 고르는 틈(2만큼)을 가진 뒤 "반갑습니다"로 이어짐 (일상적인 여백)
 
-### ③ 다국어 적용 (영어, 일본어, 중국어)
+### ④ 다국어 적용 (영어, 일본어, 중국어)
 * **영어 (강세와 뉘앙스)**
   * `re_1fuse^4!4` (동사: 거절하다 - 뒤 음절을 높고 강하게)
   * `ref^4!4use_1` (명사: 쓰레기 - 앞 음절을 높고 강하게)
@@ -51,24 +57,35 @@
 * **중국어 (성조의 확장)**
   * 기존의 4성을 넘어, "화가 난 상태의 3성"이나 "속삭이는 4성" 등 '성조 + 감정 데이터'를 문장에 직접 삽입할 수 있습니다.
 
+
 ---
 
 ## 📊 3. 장단점과 비전 (Pros & Cons)
 
 ### ✨ 장점
 1. **압도적인 데이터 가성비**: 오디오(WAV, MP3) 파일로 저장해야 했던 억양 데이터를 텍스트만으로 경량화하여 저장 및 전송할 수 있습니다.
-2. **사투리의 완벽한 텍스트화**: 지역별 특유의 억양과 운율을 텍스트로 보존하고 재현할 수 있습니다.
+2. **사투리의 텍스트화**: 지역별 특유의 억양과 운율을 텍스트로 보존하고 재현할 수 있습니다.
 3. **AI 및 TTS 산업의 핵심 도구**: AI 개발자, 성우 대본 제작자, 메신저 플랫폼 기업 등에게 정밀한 오디오 제어 기능을 제공합니다.
 
 ### 🚨 단점 및 한계점
 1. **가독성 저하**: 일반 텍스트에 비해 기호가 많아 처음 접하는 사람에게는 시각적 피로도가 높습니다.
-2. **상대적 기준의 모호함**: 화자의 성별, 기본 말하기 속도 등에 따라 기준점이 달라질 수 있습니다. *(추후 `^1` = 120Hz, `_1` = 200ms, `!1` = 60dB 같은 절대적인 물리량 기준점을 도입하여 보완 예정)*
+2. **상대적 기준의 모호함**: 화자의 성별, 기본 말하기 속도 등에 따라 기준점이 달라질 수 있습니다. *(추후 `^1` = 120Hz, `_1` = 100ms, `!1` = 60dB 같은 절대적인 물리량 기준점을 도입하여 보완 예정)*
 
 ---
 
 ## ⚙️ 4. 세부 규칙 및 예외 처리 (Advanced)
 
-프로젝트의 완성도와 시스템 해석의 정확성을 위한 고수용 세부 규칙입니다.
+프로젝트의 완성도와 시스템 해석의 정확성을 위한 전문가용 세부 규칙입니다.
+
+### 📌 문장 단위 블록 연산 및 템포 조절 (괄호 사용)
+수학의 분배 법칙처럼, 문장 전체를 괄호 `( )`로 묶고 기호를 붙이면 **문장 전체의 속도나 톤을 일괄적으로 제어**할 수 있습니다.
+
+* **템포(말하기 속도) 조절:** 길이 기호(`_`)를 괄호에 적용하여 문장의 전체 재생 시간을 늘리거나 압축합니다.
+  * `(야 지금 당장 튀어와!5)_3` ➔ 문장 전체 길이를 3배로 늘림 (아주 느리고 묵직하게 말함)
+  * `(야 지금 당장 튀어와!5)_0.5` ➔ 문장 전체 길이를 0.5배로 압축함 (랩 하듯 엄청 빠르게 쏘아붙임)
+* **일괄 톤/볼륨 조절:**
+  * `(정말 죄송합니다)^-2` ➔ 문장 전체의 톤(Pitch)을 일괄적으로 낮게 깔아서 우울하게 말함.
+
 
 ### 📌 공백(띄어쓰기) 처리 규칙
 * **일반 띄어쓰기 = 기본 호흡(`'1`)**: 타자의 피로도를 줄이기 위해, 별도의 기호 없는 일반적인 띄어쓰기는 자동으로 표준 호흡(기본값 `'1`)으로 처리됩니다. (`안녕하세요^3 반갑습니다^3` ➔ 자동으로 1만큼 숨을 고름)
@@ -95,10 +112,11 @@
 ### 📌 5-1. 소수점 및 절대 물리량 매핑 (Float & Absolute Values)
 기호 뒤에 소수점(Float)을 입력하여, 상대적인 느낌이 아닌 **절대적인 물리량(Hz, ms, dB)**으로 정밀하게 제어할 수 있습니다. 이를 통해 원본 음성의 운율 곡선(Prosody Contour)을 오차 없이 100% 복제합니다.
 
-* **입력 예시:** `오^1.25_3.62!2.31`
-  * `^1.25` (Pitch): 기본 주파수 대비 +25Hz 상향
-  * `_3.62` (Duration): 해당 음절을 정확히 362ms 동안 발성
+* **입력 예시:** `오^1.25_3.62!2.31@1.50`
+  * `^1.25` (Pitch): 기본 주파수 대비 +125Hz 상향 (예: 1단위 = 100Hz 기준)
+  * `_3.62` (Duration): 해당 음절을 정확히 362ms 동안 발성 (예: 1단위 = 100ms 기준)
   * `!2.31` (Stress): 기본 볼륨 대비 +6.93dB 강세 (예: 1단위 = 3dB 기준)
+  * `@1.50` (Tremor): 1초에 5번 진동(5Hz 고정)하며, 주파수가 위아래로 ±15Hz 폭으로 출렁임 (예: 1단위 = ±10Hz 기준)
 
 ### 📌 5-2. 목소리의 RGB: 음색 필터 태그 `*[R, G, B]` (소수점 무한 조색 지원)
 주파수만으로는 사람마다 다른 고유의 목소리 색깔(음색)을 표현할 수 없습니다. 소리결은 인간의 음색을 결정하는 3가지 핵심 요소를 수치화하여 텍스트만으로 음색을 창조하고 재현합니다. 
@@ -116,7 +134,7 @@
 * `*[2.35, 4.81, 8.05]` ➔ 매끄러움과 숨소리가 황금 비율로 섞인 특정 **심야 라디오 성우 목소리**
 
 ### 📌 5-3. 음색의 실시간 동적 변화 (Dynamic Timbre Shift)
-기존 오디오 파일로는 불가능한 독보적인 기능입니다. 동적 변화 기호(`~`)를 음색 태그에 적용하면, 말을 하는 도중에 실시간으로 목소리 색깔(화자) 자체가 변하는 연기를 텍스트로 구현할 수 있습니다. 소수점 조색을 활용하면 부드러운 그라데이션 변화가 가능합니다.
+기존 오디오 파일로는 불가능한 독보적인 기능입니다. 동적 변화 기호(`~`)를 음색 태그에 적용하면, 말을 하는 도중에 실시간으로 목소리 색깔(화자) 자체가 변하는 연기를 텍스트로 구현할 수 있습니다. 소수점 조색을 활용하면 이질감 없이 부드러운 그라데이션 변화가 가능합니다.
 
 * **예시:** `*[1.0, 2.0, 1.0 ~ 8.5, 8.5, 2.0] 나^1~5_4 건드리지 마!5`
 * **해석:** 문장 시작("나")은 여린 아이 목소리로 시작하지만, 문장이 끝날 무렵("마")에는 점진적이고 부드럽게 거친 괴물의 목소리로 완전히 탈바꿈하며 폭발합니다.
@@ -129,11 +147,14 @@ AI에게 땡^4큐^2_2라고 감정을 표현해보세요.
 
 소리결은 아직 시작 단계에 있지만, 이를 토대로 발전시킨다면 **'텍스트만으로 음의 시각적 표현'**이 가능할 것이라 생각됩니다.
 
-📄 권리 고지 및 이용 안내 (Notice & Rights)
 
-'소리결(Sori-gyeol)'의 표기 규칙은 기존 악보의 음악 기호(//, ')와 키보드 특수문자(^, _,!)를 일상적인 텍스트 환경에 맞게 재해석하여 결합한 구조입니다. 이는 저작자(seunghun123)의 아이디어를 바탕으로 최초 제안 및 기획되어 체계적으로 정리된 개인 창작물입니다.
 
-비상업적 개인 사용 완전 자율: 개인 유저들이 일상적인 소통, 메신저 채팅, 게임 등에서 본 표기법을 사용하는 것은 아무런 제한 없이 전면 자유롭습니다.
+
+### 📄 권리 고지 및 이용 안내 (Notice & Rights)
+
+'소리결(Sori-gyeol)'의 표기 규칙은 기존 악보의 음악 기호(//, ')와 키보드 특수문자(^, _, !, @, ())를 일상적인 텍스트 환경에 맞게 재해석하여 결합한 구조입니다. 이는 저작자(seunghun123)의 아이디어를 바탕으로 최초 제안 및 기획되어 체계적으로 정리된 개인 창작물입니다.
+
+개인적인 사용은 언제나 환영합니다: 일상적인 대화나 메신저 채팅, 게임 등 비상업적인 목적이라면 누구나 편안하고 즐겁게 소리결을 활용해 주시길 바랍니다.
 
 공식 규격의 변형 및 재배포 금지: 개인 유저들이 일상에서 기호를 조금씩 변형하거나 응용하여 사용하는 것은 전적으로 자유롭습니다. 다만, 본 프로젝트의 공식 규칙 문서(README) 자체를 임의로 수정·변형하여 제3자에게 '새로운 표준'인 것처럼 재배포하거나 2차 저작물로 등록하는 행위는 금지합니다.
 
@@ -143,9 +164,9 @@ AI에게 땡^4큐^2_2라고 감정을 표현해보세요.
 
 ### 📄 Notice & Rights
 
-The notation rules of 'Sori-gyeol' are a structured combination of existing musical symbols (`//`, `'`) and keyboard special characters (`^`, `_`, `!`), reinterpreted for everyday text environments. This is a personal creation originally proposed, conceptualized, and systematically organized based on the ideas of the author (seunghun123).
+The notation rules of 'Sori-gyeol' are a structured combination of existing musical symbols (`//`, `'`) and keyboard special characters (`^`, `_`, `!` @, ()), reinterpreted for everyday text environments. This is a personal creation originally proposed, conceptualized, and systematically organized based on the ideas of the author (seunghun123).
 
-* **Full Freedom for Non-Commercial Personal Use:** Individual users are completely free to use this notation system in daily communication, messenger chats, games, etc., without any restrictions, and no attribution (credit) is required.
+* **Personal Use is Always Welcome:** Everyone is encouraged to comfortably and joyfully use Sori-gyeol for any non-commercial purposes, such as daily conversations, messenger chats, and games.
 * **Prohibition of Modifying and Redistributing the Official Specification:** Individual users are entirely free to slightly modify or adapt the symbols in their daily use. However, it is strictly prohibited to arbitrarily modify or alter the official specification document (README) of this project to redistribute it to third parties as a "new standard" or to register it as a derivative work.
 * **Prohibition of Commercial Use and System Integration:** Any use for commercial purposes, including developing software based on these rules or unauthorized integration into corporate platforms and services, is strictly prohibited by law. Commercial use must undergo a separate license agreement with the copyright holder.
 
